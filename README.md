@@ -20,7 +20,9 @@ const quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        imageDrop: true
+        imageDrop: {
+            onImageDrop: <callback function(blob, callback) or null>
+        }
     }
 });
 ```
